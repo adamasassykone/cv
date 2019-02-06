@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+  <head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="uviewport" content="width=device-width, initial-scale=1">
+	
+	<!--Include material design icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" > 
+	<!--Include stylesheet from material design -->
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-blue.min.css" >
+	
+	<!--Include javascript needed for material design -->
+	<script defer src="https://code.getmdl.io/1.3.0/material.blue-yellow.min.js" ></script>
+	
+	<script type = "text/javascript" src = "script-cv.js" ></script>
+  </head>
+  
+    <title>Le Curriculum Vitae de M. Adama Sassy KONE</title>
+  
+     <p class="progress_bar" style="width:99vw">
+     <input class="mdl-slider mdl-js-slider" type="range" oninput="scrollPercent" id="progress_bar" min="0.55" max="2.46" value="deplacement" step="0.001">
+     </p>
+   
 <body>
+    
 <div class="total">
-    
-    <head>
-	<link rel="stylesheet" href="style.css" />
-	<meta charset="utf-8"/>
-    </head>
-    
+   
     <div class="Entete">
-	  <ul>
-	   <li><a href="#infoimage">Coordonnees</a></li>
-	   <li><a href="#formations">Formations</a></li>
-	   <li><a href="#experiences">Experiences</a></li>
-	   <li><a href="#langues">Langues</a></li>
-	   <li><a href="#competences">Competences</a></li>
-	   <li><a href="#hobbys">Hobbys</a></li>
-	  </ul>
+	
+	   <div class="onglet" style="width:10%"> <a href="#infoimage"><b>Coordonnees</b></a></div>
+	   <div class="onglet" style="width:10%"> <a href="#formations"><b>Formations</b></a></div>
+	   <div class="onglet" style="width:10%"><a href="#experiences"><b>Experiences</b></a></div>
+	   <div class="onglet" style="width:10%"><a href="#langues"><b>Langues</b></a></div>
+	   <div class="onglet" style="width:10%"><a href="#competences"><b>Competences</b></a></div>
+	   <div class="onglet" style="width:10%"><a href="#hobbys"><b>Hobbys</b></a></div>
+	
     </div>
     
-    <div class="infoimage">
+    <div class="infoimage" id="infoimage">
 	    <div class="infos">
-	    	<h1 class="titre">Adama Sassy KONE</h1>
+	    	<h2 class="titre"><b>Adama Sassy KONE</b></h2>
 		    <p>COORDONNEES PERSONNELLES</br><p>
 		   <address>B418, Residence PUVIS/MONOD</br>
 			<street>29 Rue Marguerite</br></street>
@@ -32,80 +51,97 @@
 		   <email>adamasassykone@gmail.com</br></email>
         </div>
 	    <div class="image">
-		    <img src="Matete.PNG" alt="Photo de profil CV Sassy" width="180"/>
+		    <img id="photo" src="Matete.png" alt="Photo de profil CV Sassy" width="180"/>
         </div>
     </div>
 
      <div class="reste">
       <div class="formations">
          <h3> FORMATIONS UNIVERSITAIRES</br></h3>	
-	     
-	     <h4><a href="http://master-info.univ-lyon1.fr/CCI/" target="http://master-info.univ-lyon1.fr/CCI/">Master 2 Informatique</a></h4>
-		 <h4>  2018-2019:  Compétences Complementaires en Informatique(CCI)</br></h4>
-		 <li>Système d'information pour la production(SIP) </br></li>
-		 <etablissement>Université Claude Bernard Lyon 1</br></etablissement>
-		 </br><city>Villeurbanne,</city>
-		 <country>France</br></country>
-			
-	    <h4> Master 2 Géographie </br></h4>
-		  <h4>  2016-2017: Geosciences</br></h4>
-		  <li>Ressources en eau - gestion en environnement </br></li>
-		  <etablissement><a href="https://www.univ-lorraine.fr/" target="https://www.univ-lorraine.fr/"><b>Université de Lorraine</a></b></etablissement>
-		  </br><city>Metz,</city>
-		  <country>France</country>
-			
-	    <h3> Master 2 Sciences de la terre et l'univers		</br></h3>
-		  <h4>  2014-2015: Eau et environnement	</br></h4>
-		  <li>Gestion des ressources en eau et en environnement </li>
-		  <etablissement>Université de Khemis-Miliana
-		  </br><city>Khemis-Miliana,</city>
-		  <country>Algérie</country>
-		  </br></etablissement>
+	    <hr>
+	     <div class="formation">
+	            <div class="annee"> 
+					<b>2018-2019</b>
+				</div>
+	            <div class="specia">
+				  <h3><a href="http://master-info.univ-lyon1.fr/CCI/" target="http://master-info.univ-lyon1.fr/CCI/">Master 2 Compétences Complementaires en Informatique(CCI)</a></h4>
+		          <b>Système d'information pour la production(SIP) </br></b>
+		          <b>Université Claude Bernard Lyon 1</br></b>
+		        </div>
+		        <div class="lieu">
+					<b>Villeurbanne, FRANCE</b>
+		        </div>
+	</div>
+	<div class="formation">
+		   <div class="annee">
+			   <b>2016-2017</b>
+		   </div>
+	       <div class="specia">
+			   <h3><a href="https://shs-metz.univ-lorraine.fr/content/master-geosciences-specialite-rega" target="https://shs-metz.univ-lorraine.fr/content/master-geosciences-specialite-rega">Master 2 Geosciences: Planetes, Ressource, environnement </a></br></h3>
+		       <b>Ressources en eau - gestion en environnement </br></b>
+		       <b>Université de Lorraine</br></b>
+		   </div>
+		   <div class="lieu">
+		     <b>Metz, FRANCE</b>
+		   </div>
+	</div>
+	<div class="formation">
+		<div class="annee">
+			<b>2014-2015</b>
+		</div>
+		<div class="specia">
+	       <h3><a href="fsnv-st.univ-km.dz" target="hfsnv-st.univ-km.dz"> Master 2 Eau et environnement </a></br></h3>
+		   <b>Gestion des ressources en eau et en environnement </br></b>
+		   <b>Université de Khemis-Miliana</br></b>
+		</div>
+		<div class="lieu">
+		  <b>Khemis-Miliana, ALGERIE</b>
+		</div>
+	</div>
+		 </hr>
       </div>
       
-  <div class="experiences">
-     <h3>EXPERIENCES ET STAGES</br></h3>
-	      <table>
-	        <caption>Laboratoire Déchets Eaux Environnement Pollutions (DEEP)</caption>
-	        <h4>Assistant Ingénieur / Chargé de Suivi expérimental des toitures végétalisées</h4>
-	      <tr>	
-	          <td><span><b>Avril 2017 - Septembre 2017</b></span></td>
-	          <td><span><h4> Stage Master 2	</h4></span></td>
-	      </tr>
-	        <tr>
-	         <td><b>INSA DE LYON    </b></td> 
-	 	     <td>Villeurbanne, </td>
-		     <td>France</td>
-	        </tr>
-          </table>
-    
-			<ul>
-		<p> Missions ou tâches réalisées</p>
-		<li>Collecte de données</li>
-		<li>Mise en place et Gestion des bases de données de produit</li>
-		<li>Maîtrise du pack Microsoft office (Excel, Word, PowerPoint)</li>
-		<li>Test d'un prototype de tuile végétalisée pour la gestion des eaux pluviales et la température</li>
-		<li>Travail dans la pluridisciplinarité </li>
-		<li>Installation et mesures hydrologiques sur le terrain</li>
-		<li>Innovations et présentations des résultats lors des réunions</li>
-		<li>Rédaction des rapports hebdomadaires</li>
-		</ul>
-
-	<table>
+  <div class="experiences" id="experiences">
+     <h3>EXPERIENCES ET STAGES</br></h3> <hr>
+	<div class="experience">
+		<div class="date">
+	        <b>Avril 2017 - Septembre 2017</b>
+	        <h4> Stage Master 2	</h4>
+	    </div> 
+	    <div class="poste"> 
+			<h4>Assistant Ingénieur / Chargé de Suivi expérimental des toitures végétalisées</h4>
+			    <caption>Laboratoire Déchets Eaux Environnement Pollutions (DEEP)</caption>
+	         <span>INSA DE LYON    </span>
+	 	</div>      
+        <div class="taches">
+	     <ul>
+		  <p> Missions ou tâches réalisées</p>
+		   <li>Collecte de données</li>
+		   <li>Mise en place et Gestion des bases de données de produit</li>
+		   <li>Maîtrise du pack Microsoft office (Excel, Word, PowerPoint)</li>
+		   <li>Test d'un prototype de tuile végétalisée pour la gestion des eaux pluviales et la température</li>
+		   <li>Travail dans la pluridisciplinarité </li>
+		   <li>Installation et mesures hydrologiques sur le terrain</li>
+		   <li>Innovations et présentations des résultats lors des réunions</li>
+		   <li>Rédaction des rapports hebdomadaires</li>
+		 </ul>
+	   </div> 	 
+       <div class="ville">
+					<p>Villeurbanne, FRANCE</p>
+	    </div>
+    </div>        
+ <div class="experience">	        
+	<div class="date">
+		<b>Fevrier 2016 - Mars 2016</b>
+	          <h4> Stage Master 1</h4>
+	  </div>
+	<div class="poste">
+		<h4>Stagiaire M1 Ecologie-Cartographie S.I.G</h4>
 	    	<caption>Laboratoire CHRONO6ENVIRONNEMENT</caption>
-	    	<h4>Stagiaire M1 Ecologie-Cartographie S.I.G</h4>
-	   </tr>
-	          <td><b>Fevrier 2016 - Mars 2016</b></td>
-	          <td><h4> Stage Master 1</h4></td>
-	   </tr>
-	  <tr>
-	           <td><b>UNIVERSITE DE FRANCHE-COMTE   </b></td>
-	           <td>Besançon, </td>
-	           <td>France</td>
-      </tr>
-     </table>
+	           <span>UNIVERSITE DE FRANCHE-COMTE   </span>
+	 </div>    
      
-
+      <div class="taches">
 		<ul>
 		<p> Missions ou tâches réalisées</p>
 		<li>Collecter et structurer des informations géographiques</li>
@@ -114,20 +150,21 @@
 		<li>Etudes du fonctionnement d’un ruisseau de la forêt de Chaux</li>
 		<li>Cartographie des propriétés du sol l’aide de MapInfo</li>
 		</ul>
-	
-	<table>
-	 <caption>Chargé du projet de modélisation des réseaux d’AEP et d’assainissement de la ville de Khemis Miliana</caption>
-	
-    	</tr>
-		  <td>	<b>Fevrier 2015 - Juin 2015 </b></td>
-		  <td><h4> Projet de fin de Master</h4></td>
-		</tr>
-		<tr>
-		<td><b>LA DIRECTION DE L’HYDRAULIQUE D’AIN-DEFLA</b></td>
-			<td>Ain-Defla,</td>
-			<td>Algérie</td>
-		</tr>
-	</table>
+	   </div>
+	   <div class="ville">
+	           <p>Besançon, FRANCE</p>
+	   </div>
+  </div>
+  <div class="experience">
+	<div class="date">
+	 <b>Fevrier 2015 - Juin 2015 </b>
+		  <h4> Projet de fin de Master</h4>
+	 </div>
+	 <div class="poste">
+	 <caption>Chargé du projet de modélisation des réseaux d’AEP et d’assainissement de la ville de Khemis Miliana</br></caption>
+		<b>LA DIRECTION DE L’HYDRAULIQUE D’AIN-DEFLA</b>
+	</div>
+	<div class="taches">
 		<ul>
 		<p> Missions ou tâches réalisées</p>
 		<li>Gestion des ressources en eaux (Adduction, distribution et évacuation)</li>
@@ -136,9 +173,81 @@
 		<li>Modélisation hydraulique à l’aide de l’EPANET et l’EPASWMM</li>
 		</ul>
     </div>
+    <div class="ville">
+			<p>Ain-Defla, ALGERIE</p>
+    </div>
+  </div>
+		 </hr>
+    </div>
 
- <div class="langues">
-    <h3>LANGUES</h3>
+  <div class="competences" id="competences">
+    <h3>COMPETENCES</h3> <hr>
+    <div class="competence">
+		<h4>LANGAGES DE PROGRAMMATION	</h4> 
+		    <ul> <li> C, Java, Shell, Scilab, Python </li></ul> 
+		   
+	    <h4>OUTILS ET TECHNOS</h4>
+   
+	    <ul> 
+		   <li>PLM, Ingénierie Simultanée (Standard STEP)</li>
+            <li>Modélisation Géométrique, CFAO, prototypage rapide (CATIA, AutoCAD, Proengineer, ...)</li>
+            <li>HEC-RAS, ITSM, HYFRAN, MapInfo</li>
+		    <li>ERP/SAP: Modélisation des processus d’entreprise</li> 
+         <li> Business process Model and Notation (BPMN)</li>
+            <li>Systèmes d'information (Merise, UML)</li>
+             <li>Méthodes de conception [Cascade, V, Agile (Scrum, XP, …)]</li> 
+            <li> Systèmes d'information Collaboratifs Base de données (Oracle/SQL)</li>
+		    <li>Image (VRML)</li>
+	     </ul> 
+	      
+
+		 <h4>WEB</h4> 
+		    
+		    <ul>
+		    <li>Intégration et Interopérabilité (OWL, Web services)</li>
+		    <li>Internet (HTTP, XML, HTML, CSS)</li>
+           </ul>
+               
+		 <h4>CLOUD COMPUTING</h4> 
+		    
+		     <ul>
+		      <li>(IaaS, SaaS, PaaS), Virtualisation, Containers (Docker), OpenStack
+                 visualisation et Interface H/M</li>
+               </ul>
+        
+		<h4>SYSTÈMES D'EXPLOITATION</h4> 
+		   
+		    <ul>
+		    <li>Unix (MacOS X, GNU/Linux (Debian, Ubuntu, Fedora, ...))</li>
+		    <li>Windows</li>
+		    </ul>
+		    </hr>
+		</div>
+   </div>
+   <div class="hoblangues">
+   <div class="hobbys" id="hobbys">
+      <h3> CENTRES D'INTÉRÊTS</h3> <hr>
+      <table>
+		<tr>
+		    <td><b>Foot-ball :</b></td>
+		    <td>Gardien de but</td>
+		  </tr>
+	   <tr>
+	       <td><b>Tir sportif:</b></td>
+	       <td>à 10 m (avec Pistolet et carabine)</td>
+	   </tr>
+	   <tr>
+	       <td><b>Langues étrangères:</b></td>
+	       <td>Polyglotte</td>
+	   </tr>
+	   <tr>
+	       <td><b>VIE ASSOCIATIVES:</b></td>
+	       <td>AESMALY (Chargé d’informations et de communications); Association Alexandrine</td>
+	     </tr>
+	   </table> </hr>
+   </div>
+   <div class="langues" id="langues">
+    <h3>LANGUES</h3> <hr>
      <table>
 		<tr>
 		    <td><b> Français :  </b> </td>
@@ -164,74 +273,10 @@
 		    <td><b>Japonais :  </b></td>
 		    <td>Parlé</td>
 		</tr>
-	</table>
+	</table> </hr>
  </div>
+</div>
 
-  <div class="competences">
-    <h3>COMPETENCES</h3>
-		<h4>LANGAGES DE PROGRAMMATION	</h4> 
-		    <hr> 
-		    <ul> <li> C, Java, Shell, Scilab </li></ul> 
-		    </hr>
-	    <h4>OUTILS ET TECHNOS</h4>
-     <hr>
-	    <ul> 
-		   <li>PLM, Ingénierie Simultanée (Standard STEP)</li>
-            <li>Modélisation Géométrique, CFAO, prototypage rapide (CATIA, AutoCAD, Proengineer, ...)</li>
-            <li>HEC-RAS, ITSM, HYFRAN, MapInfo</li>
-		    <li>ERP/SAP: Modélisation des processus d’entreprise</li> 
-         <li> Business process Model and Notation (BPMN)</li>
-            <li>Systèmes d'information (Merise, UML)</li>
-             <li>Méthodes de conception [Cascade, V, Agile (Scrum, XP, …)]</li> 
-            <li> Systèmes d'information Collaboratifs Base de données (Oracle/SQL)</li>
-		    <li>Image (VRML)</li>
-	     </ul> 
-	      </hr>
-
-		 <h4>WEB</h4> 
-		    <hr>
-		    <ul>
-		    <li>Intégration et Interopérabilité (OWL, Web services)</li>
-		    <li>Internet (HTTP, XML, HTML, CSS)</li>
-           </ul>
-               </hr>
-		 <h4>CLOUD COMPUTING</h4> 
-		     <hr>
-		     <ul>
-		      <li>(IaaS, SaaS, PaaS), Virtualisation, Containers (Docker), OpenStack
-                 visualisation et Interface H/M</li>
-               </ul>
-            </hr>
-		<h4>SYSTÈMES D'EXPLOITATION</h4> 
-		    <hr>
-		    <ul>
-		    <li>Unix (MacOS X, GNU/Linux (Debian, Ubuntu, Fedora, ...))</li>
-		    <li>Windows</li>
-		    </ul>
-		    </hr>
-   </div>
-  
-   <div class="hobbys">
-      <h3> CENTRES D'INTÉRÊTS</h3>
-      <table>
-		<tr>
-		    <td><b>Foot-ball :</b></td>
-		    <td>Gardien de but</td>
-		  </tr>
-	   <tr>
-	       <td><b>Tir sportif:</b></td>
-	       <td>à 10 m (avec Pistolet et carabine)</td>
-	   </tr>
-	   <tr>
-	       <td><b>Langues &eacute;trangères:</b></td>
-	       <td>Polyglotte</td>
-	   </tr>
-	   <tr>
-	       <td><b>VIE ASSOCIATIVES:</b></td>
-	       <td>AESMALY (Chargé d’informations et de communications); Association Alexandrine</td>
-	     </tr>
-	   </table>
-   </div>
       </div>
 </div>
 </body>
